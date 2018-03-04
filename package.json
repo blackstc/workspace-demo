@@ -6,6 +6,6 @@
   "workspaces": ["packages/*"],
   "license": "MIT",
   "scripts": {
-    "build:workspace-a": "cd packages/workspace-a & yarn build"
+    "build:workspace-a": "cd ./packages/workspace-a & yarn build"
   }
 }
