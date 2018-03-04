@@ -4,5 +4,8 @@
   "main": "index.js",
   "private": true,
   "workspaces": ["packages/*"],
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build:workspace-a": "cd packages/workspace-a & yarn build"
+  }
 }
