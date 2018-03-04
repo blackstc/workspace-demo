@@ -5,7 +5,7 @@ import mult from 'workspace-b'
 
 class App extends React.Component {
   render() {
-    return <div>{mult(2)}</div>
+    return <div>{mult(3)}</div>
   }
 }
 

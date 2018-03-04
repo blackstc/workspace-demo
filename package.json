@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "license": "MIT",
   "scripts": {
-    "build:workspace-a": "cd ./packages/workspace-a && yarn build"
+    "build:workspace-a": "cd ./packages/workspace-a && yarn build",
+    "deploy:workspace-a": "cd ./packages/workspace-a && yarn deploy"
+  },
+  "devDependencies": {
+    "firebase-tools": "^3.17.4",
+    "gh-pages": "^1.1.0"
   }
 }
