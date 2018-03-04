@@ -5,7 +5,7 @@ jobs:
       - image: circleci/node:9
     steps:
       - checkout
-      - run: yarn build:all
+      - run: yarn
   build-workspace-a:
     docker:
       - image: circleci/node:9
@@ -29,6 +29,7 @@ workflows:
   version: 2
   build_and_test:
     jobs:
+      -checkout
       - build-workspace-a
       - test
       - deploy:
