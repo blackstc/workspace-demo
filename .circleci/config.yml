@@ -39,4 +39,4 @@ jobs:
       # run tests!
       - run: yarn build:workspace-a
 
-      - run: yarn deploy:workspace-a deploy --token=$FIREBASE_TOKEN --non-interactive
+      - run: yarn deploy:workspace-a --token=$FIREBASE_TOKEN --non-interactive
